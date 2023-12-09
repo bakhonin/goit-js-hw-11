@@ -59,7 +59,7 @@ async function fetchImages() {
       }
       lightbox.refresh();
       if (!firstLoad) {
-        smoothScrollTo(gallery.lastElementChild);
+        smoothScroll(gallery.lastElementChild);
       } else {
         firstLoad = false;
       }
@@ -102,7 +102,7 @@ function renderImages(images) {
   });
 }
 
-function smoothScrollTo(element) {
+function smoothScroll(element) {
   const { height: cardHeight } = element.getBoundingClientRect();
   window.scrollBy({
     top: cardHeight * 2.75,

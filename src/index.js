@@ -105,7 +105,7 @@ function renderImages(images) {
 function smoothScrollTo(element) {
   const { height: cardHeight } = element.getBoundingClientRect();
   window.scrollBy({
-    top: cardHeight * 1.8,
+    top: cardHeight * 2.75,
     behavior: 'smooth',
   });
 }
